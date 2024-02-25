@@ -30,14 +30,14 @@ Feature: Registro de Usuarios
 @PRUEBA5
   Scenario: Verificar email válido
     When hago clic en el boton con el texto "Sign in"
-    And ingreso correo electrónico valido "zducallin@gmail.com" en el campo Email address
+    And ingreso correo electrónico valido "llin@gmail.com" en el campo Email address
     And hago clic en el botón Create an account "SubmitCreate"
     Then debería ver el siguiente el mensaje de Información personal "YOUR PERSONAL INFORMATION"
 
 @PRUEBA6
   Scenario: Verificar registro incompleto
     When hago clic en el boton con el texto "Sign in"
-    And ingreso correo electrónico valido "zducallyn@gmail.com" en el campo Email address
+    And ingreso correo electrónico valido "llyn@gmail.com" en el campo Email address
     And hago clic en el botón Create an account "SubmitCreate"
     And selecciono el género masculino
     And ingreso "Juan" en el campo first name
@@ -48,7 +48,7 @@ Feature: Registro de Usuarios
 @PRUEBA7
   Scenario: Verificar registro exitoso
     When hago clic en el boton con el texto "Sign in"
-    And ingreso correo electrónico valido "zducallyn@gmail.com" en el campo Email address
+    And ingreso correo electrónico valido "llyn@gmail.com" en el campo Email address
     And hago clic en el botón Create an account "SubmitCreate"
     And selecciono el género masculino
     And ingreso "Carlos" en el campo first name
